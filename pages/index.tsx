@@ -1,24 +1,18 @@
-import { Drawer, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Paper, Stack, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material"
-import MailIcon from '@mui/icons-material/Mail';
+import { 
+  Paper,
+  Stack,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow
+} from "@mui/material"
 import { NextPage } from "next"
 
 const Home: NextPage = () => {
   return (
     <Stack>
-      <Drawer
-        variant="permanent"
-      >
-        <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon><MailIcon /></ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List>
-      </ Drawer>
       <TableContainer component={Paper}>
         <Table>
           <TableHead>
