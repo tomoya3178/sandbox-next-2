@@ -8,7 +8,6 @@ const theme = createTheme()
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
-      <Container>
       <Drawer variant="permanent">
         <List>
           {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
@@ -21,8 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           ))}
         </List>
       </ Drawer>
-      </Container>
-      <Container component="main">
+      <Container>
         <Component {...pageProps} />
       </Container>
     </ThemeProvider>
