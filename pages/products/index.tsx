@@ -1,3 +1,4 @@
+import { Card } from "@mui/material";
 import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
 import { useEffect, useState } from "react";
 
@@ -41,11 +42,13 @@ export default function Home () {
     },
   ];
   return (
-    <div style={{ height: 400, width: '100%' }}>
-      <DataGrid
-        rows={products}
-        columns={columns}
-      />
-    </div>
+    <Card>
+      <div style={{ height: 400, width: '100%' }}>
+        <DataGrid
+          rows={products}
+          columns={columns}
+        />
+      </div>
+    </ Card>
   )
 }
