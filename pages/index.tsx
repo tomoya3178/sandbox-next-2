@@ -8,28 +8,27 @@ import {
   TableHead,
   TableRow
 } from "@mui/material"
-import { NextPage } from "next"
 
-const Home: NextPage = () => {
+export default function Home () {
   return (
-    <Stack>
-      <TableContainer component={Paper}>
-        <Table>
-          <TableHead>
-            <TableRow>
-              <TableCell>Dessert</TableCell>
-              <TableCell>Calories</TableCell>
-              <TableCell>Fat</TableCell>
-              <TableCell>Carbs</TableCell>
-              <TableCell>Protein</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-          </TableBody>
-        </Table>
-      </ TableContainer>
-    </Stack>
+    <Paper>
+      <Stack>
+        <TableContainer component={Paper}>
+          <Table>
+            <TableHead>
+              <TableRow>
+                <TableCell>Dessert</TableCell>
+                <TableCell>Calories</TableCell>
+                <TableCell>Fat</TableCell>
+                <TableCell>Carbs</TableCell>
+                <TableCell>Protein</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+            </TableBody>
+          </Table>
+        </ TableContainer>
+      </Stack>
+    </ Paper>
   )
 }
-
-export default Home
