@@ -1,4 +1,4 @@
-import { Box, Container, CssBaseline, Drawer, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui/material"
+import { Box, Drawer, List, ListItem, ListItemButton, ListItemText } from "@mui/material"
 import { ReactElement } from "react"
 
 type LayoutProps = Required<{
@@ -10,7 +10,6 @@ const drawerWidth = 256;
 const Layout = ({ children }: LayoutProps) => {
   return (
     <Box sx={{ display: 'flex' }}>
-      <CssBaseline />
       <Box
         component="nav"
         sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
